@@ -13,12 +13,6 @@ const Main = () => {
   const utm_term = params.get('utm_term');
   const utm_content = params.get('utm_content');
 
-  console.log('utm_source:', utm_source);
-  console.log('utm_medium:', utm_medium);
-  console.log('utm_campaign:', utm_campaign);
-  console.log('gclid:', gclid);
-  console.log('utm_term:', utm_term);
-  console.log('utm_content:', utm_content);
 
   const utmParams = [
     utm_source && `utm_source=${utm_source}`,
@@ -29,9 +23,9 @@ const Main = () => {
     utm_content && `utm_content=${utm_content}`,
   ].filter(Boolean).join('&');
 
-  console.log('All UTM Parameters:', utmParams);
+ 
 
-  const mainSiteLink = `https://cloud-crafters.com.ua${utmParams ? `?${utmParams}` : ''}`;
+  const mainSiteLink = `https://cloud-crafters.com.ua${`?${utmParams}`}`;
 
   return (
     <div className={s.mainContainer}>
