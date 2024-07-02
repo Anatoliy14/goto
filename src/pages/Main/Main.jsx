@@ -28,15 +28,15 @@ const Main = () => {
 
   return (
     <div className={s.mainContainer}>
-      <h1>Привіт</h1>
-      <h3>Тобі вже є 18?</h3>
+      {/* <h1>Привіт</h1>
+      <h3>Тобі вже є 18?</h3> */}
       <div className={s.buttonContainer}>
         <a href={mainSiteLink} className={s.btnYes}>
-          Так
+          До каталогу
         </a>
-        <NavLink to="/no" className={s.btnNo}>
+        {/* <NavLink to="/no" className={s.btnNo}>
           Ні
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );
