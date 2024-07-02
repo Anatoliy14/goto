@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import {useLocation } from 'react-router-dom';
 import s from './Main.module.scss';
 
 const Main = () => {
