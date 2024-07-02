@@ -11,11 +11,11 @@ export const App = () => {
   return (
     <CartProvider>
       <Routes>
-        <Route path="/crafters" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Main />} />
           <Route path="no" element={<No />} />
         </Route>
-        <Route path="*" element={<Navigate to="/crafters" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </CartProvider>
   );

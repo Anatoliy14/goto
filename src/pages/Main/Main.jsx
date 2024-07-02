@@ -35,7 +35,7 @@ const Main = () => {
         <a href={mainSiteLink} className={s.btnYes}>
           Так
         </a>
-        <NavLink to="/crafters/no" className={s.btnNo}>
+        <NavLink to="/no" className={s.btnNo}>
           Ні
         </NavLink>
       </div>
