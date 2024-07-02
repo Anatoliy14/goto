@@ -23,7 +23,6 @@ const Main = () => {
     utm_content && `utm_content=${utm_content}`,
   ].filter(Boolean).join('&');
 
- console.log("utmParams", utmParams)
 
   const mainSiteLink = `https://cloud-crafters.com.ua${`?${utmParams}`}`;
 
